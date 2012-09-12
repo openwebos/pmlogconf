@@ -1,0 +1,163 @@
+# @@@LICENSE
+#
+#      Copyright (c) 2010-2012 Hewlett-Packard Development Company, L.P.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# LICENSE@@@
+
+
+###########################################################
+# @WEBOS_INSTALL_SYSCONFDIR@/PmLog/PmLogContexts.conf
+#
+# the .sdk version of this file is used by the webOS emulator
+#
+# See PmLog.conf for information about the PmLog system.
+# This configuration file is used to store persistent
+# context definitions
+###########################################################
+
+
+###########################################################
+# GLOBAL LIBRARY LOGGING CONFIGURATION
+###########################################################
+[Config]
+LogProcessIds=false
+LogThreadIds=false
+LogToConsole=false
+#StdErrMin=emerg
+#StdErrMax=err
+#StdOutMin=warning
+#StdOutMax=debug
+
+
+###########################################################
+# CONTEXT DEFINITIONS
+#
+# Here you can specify logging context names and what
+# the default level should be for them.
+#
+# The <global> context is specially defined, otherwise
+# client context names should follow the regular rules,
+# i.e. use alphanumberic characters only and use '.' to
+# separate component hierarchies.
+#
+# Level is one of the standard syslog levels:
+#	emerg   // 0
+#	alert   // 1
+#	crit    // 2
+#	err     // 3
+#	warning // 4
+#	notice  // 5
+#	info    // 6
+#	debug   // 7
+# Or:
+#   none	// disable logging
+#
+# Note: changes to the [Contexts] section will only 
+# be read at boot time.  If you change these please 
+# reboot your device; or use the PmLogCtl app to
+# see real time changes without rebooting.
+###########################################################
+[Contexts]
+<global>=err
+LunaSysMgr=err
+LunaSysMgrJS=info
+TIL.CCP=none
+TIL.LOG=none
+TIL.IPC=none
+TIL.HCI=none
+TIL.SVC=none
+TIL.HLL=none
+TIL.BLADE=none
+TIL.CLIENT=none
+TIL.SERVICE=none
+TIL.HCI=none
+TIL.UTILS=none
+TIL.AUDIO=none
+TIL.CALL=none
+TIL.DATA=none
+TIL.DEBUG=none
+TIL.DEVCFG=none
+TIL.DEVUSE=none
+TIL.LBS=none
+TIL.POWER=none
+TIL.SIM=none
+TIL.SMS=none
+TIL.SPB=none
+TIL.SS=none
+TIL.STATE=none
+TIL.STK=none
+PmLogCtl=debug
+com.palm.wifi=err
+media=err
+wan.mgr=notice
+WSF.MessageMover=warning
+powerd=info
+com.palm.dhcp=err
+com.palm.mobilehotspot=err
+com.palm.zeroconf=err
+com.palm.wifi.authenticator=err
+com.palm.wifi.supplicant=err
+sleepd=info
+novacomd=debug
+downloadupdate=info
+updatedaemon=info
+# contexts that were in PmLog.conf, but not mentioned here
+uploadd=err
+vpn.mgr=err
+vpn.vpnacagent=err
+vpn.vpncagent=err
+vpnagent.acoal=err
+wan.mgr=err
+# Node.js services
+com.palm.service.calendar.meetingupdate=err
+com.palm.service.calendar.facebook=err
+com.palm.service.payment=err
+com.palm.service.photos=err
+com.palm.service.videos.facebook=err
+com.palm.service.boxnet=err
+com.palm.appcatalog=err
+com.palm.service.contacts.yahoo=err
+com.palm.service.photos.photobucket=err
+com.palm.service.music=err
+com.palm.service.calendar.google=err
+com.palm.service.mobileme=err
+com.palm.service.dropbox=err
+com.palm.deviceprofile=err
+com.palm.service.bluetooth.spp=err
+com.palm.service.photos.snapfish=err
+com.palm.filenotifyd.js=err
+com.palm.devicewipe=err
+com.palm.service.contacts.linkedin=err
+com.palm.messaging.chatthreader=err
+com.palm.accountservices=err
+com.palm.messaging.smstest=err
+com.palm.service.migration=err
+com.palm.service.videos.youtube=err
+com.palm.service.contacts.facebook=err
+com.palm.service.locale=err
+com.palm.service.accounts=err
+com.palm.service.backup=err
+com.palm.service.collectlogs=err
+com.palm.service.helloworld=err
+com.palm.service.mediacache=err
+com.palm.service.photos.facebook=err
+com.palm.service.contacts.google=err
+com.palm.service.calendar.yahoo=err
+com.palm.service.migrationscript=err
+com.palm.service.mediabroadcast=err
+com.palm.service.calendar.reminders=err
+com.palm.service.contacts=err
+com.palm.service.customization=err
+com.palm.service.contacts.linker=err

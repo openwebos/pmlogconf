@@ -117,6 +117,7 @@ downloadupdate=info
 updatedaemon=info
 sensord=info
 sensord.psc=warning
+webos-connman-adapter=info
 # contexts that were in PmLog.conf, but not mentioned here
 uploadd=debug
 vpn.mgr=debug

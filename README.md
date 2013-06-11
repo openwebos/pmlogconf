@@ -30,9 +30,7 @@ Notice
 			"maxSize" : 2000,
 			"rotations" : 5
 		}
-	],
-
-	"KeyValueValidation" : true
+	]
 }
 </pre>
 </code>
